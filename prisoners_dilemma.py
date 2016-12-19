@@ -268,7 +268,7 @@ def make_section2(modules, scores):
     for index in range(len(modules)):
         section2_list.append((modules[index].team_name,
                               'P'+str(index),
-                              str(sum(scores[index])/len(modules)),
+               d               str(sum(scores[index])/len(modules)),
                               str(modules[index].strategy_name)))
     section2_list.sort(key=lambda x: int(x[2]), reverse=True)
     
